@@ -1,0 +1,66 @@
+[
+    {
+        "id":1,
+        "front":{
+            "type":"text",
+            "value":"Stolica Polski?"
+        },
+        "back":{
+            "type":"text",
+            "value":"Warszawa"
+        }
+    },
+
+
+    {
+        "id":2,
+        "front":{
+            "type":"text",
+            "value":"Co oznacza skrót CPU?"
+        },
+        "back":{
+            "type":"text",
+            "value":"Central Processing Unit - jednostka centralna procesora"
+        }
+    },
+
+
+    {
+        "id":3,
+        "front":{
+            "type":"text",
+            "value":"Jak wygląda znak STOP?"
+        },
+        "back":{
+            "type":"image",
+            "value":"images/stop.png"
+        }
+    },
+
+
+    {
+        "id":4,
+        "front":{
+            "type":"image",
+            "value":"images/serce.png"
+        },
+        "back":{
+            "type":"text",
+            "value":"Serce - narząd pompujący krew"
+        }
+    },
+
+
+    {
+        "id":5,
+        "front":{
+            "type":"image",
+            "value":"images/kot.jpg"
+        },
+        "back":{
+            "type":"image",
+            "value":"images/kot-szkielet.jpg"
+        }
+    }
+
+]
