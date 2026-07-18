@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fiszki</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- MENU GŁÓWNE -->
+    <header class="header">
+
+        <h1>📚 Fiszki</h1>
+
+        <div class="mode-buttons">
+
+            <button id="reviewMode" class="mode active">
+                👀 Przegląd
+            </button>
+
+            <button id="studyMode" class="mode">
+                🧠 Nauka
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- PANEL INFORMACYJNY -->
+
+    <section class="info-panel">
+
+        <div id="counter">
+            0 / 0
+        </div>
+
+
+        <div id="progress">
+            Pozostało: 0
+        </div>
+
+
+    </section>
+
+
+
+    <!-- OPCJE -->
+
+    <section class="options">
+
+
+        <label>
+            <input type="checkbox" id="randomMode">
+            🎲 Losowo
+        </label>
+
+
+        <label>
+            <input type="checkbox" id="reverseMode">
+            🔄 Odwróć
+        </label>
+
+
+    </section>
+
+
+
+    <!-- FISZKA -->
+
+    <main class="card-area">
+
+
+        <div id="flashcard" class="flashcard">
+
+
+            <div class="flashcard-inner">
+
+
+                <!-- PRZÓD -->
+
+                <div class="card-side front"
+                     id="front">
+
+
+                </div>
+
+
+
+                <!-- TYŁ -->
+
+                <div class="card-side back"
+                     id="back">
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+
+    <!-- PRZYCISKI PRZEGLĄD -->
+
+    <section id="reviewControls"
+             class="controls">
+
+
+        <button id="previous">
+            ◀ Poprzednia
+        </button>
+
+
+        <button id="next">
+            Następna ▶
+        </button>
+
+
+    </section>
+
+
+
+
+
+    <!-- PRZYCISKI NAUKI -->
+
+    <section id="studyControls"
+             class="controls hidden">
+
+
+        <button id="dontKnow"
+                class="bad">
+
+            ❌ Nie umiem
+
+        </button>
+
+
+        <button id="know"
+                class="good">
+
+            ✅ Umiem
+
+        </button>
+
+
+    </section>
+
+
+
+
+
+    <!-- KONIEC SESJI -->
+
+    <section id="finishScreen"
+             class="hidden finish">
+
+
+        <h2>
+            🎉 Gotowe!
+        </h2>
+
+
+        <p>
+            Wszystkie fiszki opanowane.
+        </p>
+
+
+        <button id="restart">
+            🔁 Zacznij ponownie
+        </button>
+
+
+    </section>
+
+
+
+
+    <footer>
+
+        <p>
+            Kliknij fiszkę aby odwrócić
+        </p>
+
+        <p>
+            Spacja = odpowiedź | ← → = zmiana
+        </p>
+
+    </footer>
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
