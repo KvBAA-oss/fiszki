@@ -1,40 +1,79 @@
 [
     {
-        "id":1,
-        "front":{
-            "type":"text",
-            "value":"Krasucha-2 "
+        "id": 1,
+        "front": {
+            "type": "text",
+            "value": "1Ł269 Krasucha-2 (Walka Radio-elektroniczna WRE)"
         },
-        "back":{
-            "type":"image",
-            "value":"images/1.jpg"
+        "back": {
+            "type": "image",
+            "value": "images/1.jpg"
         }
     },
-
-
     {
-        "id":2,
-        "front":{
-            "type":"text",
-            "value":"BMPT terminator"
+        "id": 2,
+        "front": {
+            "type": "text",
+            "value": "BMPT Terminator (Bojowy Wóz Wsparcia Czołgów)"
         },
-        "back":{
-            "type":"image",
-            "value":"images/2.jpg"
+        "back": {
+            "type": "image",
+            "value": "images/2.jpg"
         }
     },
-
-
     {
-        "id":3,
-        "front":{
-            "type":"text",
-            "value":"Geran-2 "
+        "id": 3,
+        "front": {
+            "type": "text",
+            "value": "Geran-2 (Bezzałogowy Statek Powietrzny)"
         },
-        "back":{
-            "type":"image",
-            "value":"images/3.jpg"
+        "back": {
+            "type": "image",
+            "value": "images/3.jpg"
+        }
+    },
+    {
+        "id": 4,
+        "front": {
+            "type": "text",
+            "value": "S-70 Ochotnik (Bezzałogowy Statek Powietrzny)"
+        },
+        "back": {
+            "type": "image",
+            "value": "images/4.jpg"
+        }
+    },
+    {
+        "id": 5,
+        "front": {
+            "type": "text",
+            "value": "Su-57 (Wielozadaniowy Myśliwiec 5. generacji)"
+        },
+        "back": {
+            "type": "image",
+            "value": "images/5.jpg"
+        }
+    },
+    {
+        "id": 6,
+        "front": {
+            "type": "text",
+            "value": "T-90M Proryw (Czołg Podstawowy)"
+        },
+        "back": {
+            "type": "image",
+            "value": "images/6.jpg"
+        }
+    },
+    {
+        "id": 7,
+        "front": {
+            "type": "text",
+            "value": "TOS-1 (Samobieżna Artyleria Rakietowa)"
+        },
+        "back": {
+            "type": "image",
+            "value": "images/7.jpg"
         }
     }
-
 ]
