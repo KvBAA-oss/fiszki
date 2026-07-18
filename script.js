@@ -152,6 +152,17 @@ async function loadCards(){
 // TWORZENIE ZAWARTOŚCI KARTY
 // tekst / obraz
 // ----------------------------
+function shuffle(array) {
+
+    for (let i = array.length - 1; i > 0; i--) {
+
+        const j = Math.floor(Math.random() * (i + 1));
+
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+
+}
+
 
 function renderSide(element, data){
 
@@ -504,40 +515,26 @@ document.addEventListener(
 
 
 
-function startStudy(){
-
+function startStudy() {
 
     studyMode = true;
 
+    studyQueue = [...allCards];
 
-    studyQueue =
-    [...allCards];
-
+    if (randomMode) {
+        shuffle(studyQueue);
+    }
 
     sessionStats = {
-        known:0,
-        unknown:0
+        known: 0,
+        unknown: 0
     };
 
-
-    reviewControls.classList.add(
-        "hidden"
-    );
-
-
-    studyControls.classList.remove(
-        "hidden"
-    );
-
-
-    finishScreen.classList.add(
-        "hidden"
-    );
-
+    reviewControls.classList.add("hidden");
+    studyControls.classList.remove("hidden");
+    finishScreen.classList.add("hidden");
 
     showStudyCard();
-
-
 }
 
 
@@ -703,32 +700,23 @@ function finishStudy(){
 // RESTART NAUKI
 // ----------------------------
 
-function restartStudy(){
+function restartStudy() {
 
+    studyQueue = [...allCards];
 
-    studyQueue =
-    [...allCards];
+    if (randomMode) {
+        shuffle(studyQueue);
+    }
 
-
-    sessionStats={
-        known:0,
-        unknown:0
+    sessionStats = {
+        known: 0,
+        unknown: 0
     };
 
-
-    finishScreen.classList.add(
-        "hidden"
-    );
-
-
-    studyControls.classList.remove(
-        "hidden"
-    );
-
+    finishScreen.classList.add("hidden");
+    studyControls.classList.remove("hidden");
 
     showStudyCard();
-
-
 }
 
 
